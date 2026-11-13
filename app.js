@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 a.href = link.url;
                 a.className = "link-button";
                 a.target = "_blank";
-                a.style.backgroundColor = link.color;
+                a.style.backgroundColor = link.bgColor;
 
                 a.innerHTML = `
-                    <span><i class="${link.icon}"></i> ${link.name}</span>
+                    <span><i class="${link.icon}"></i> ${link.title}</span>
                     <i class="fas fa-chevron-right"></i>
                 `;
 
