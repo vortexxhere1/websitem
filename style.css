@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: #0f1016; /* Neonların kusursuz parlaması için koyu tema */
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Açılış Animasyonu Tanımı */
+/* Açılış Süzülme Animasyonu */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -47,26 +47,27 @@ body {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border: 3px solid #5865F2;
+    box-shadow: 0 0 20px rgba(88, 101, 242, 0.6);
     margin-bottom: 15px;
-    transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.35s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .avatar:hover {
     transform: scale(1.1) rotate(4deg);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 0 30px rgba(88, 101, 242, 0.9);
 }
 
 #profile-name {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 #profile-bio {
     font-size: 14px;
-    color: #666;
+    color: #a0a0a5;
 }
 
 .links-container {
@@ -90,11 +91,13 @@ body {
     font-size: 16px;
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
-    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    /* Soft Neon Gölge */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* Butonların sırayla ekrana gelme gecikmeleri */
+/* Butonların sırayla gelme gecikmeleri */
 .link-button:nth-child(1) { animation-delay: 0.1s; }
 .link-button:nth-child(2) { animation-delay: 0.15s; }
 .link-button:nth-child(3) { animation-delay: 0.2s; }
@@ -107,25 +110,10 @@ body {
 .link-button:nth-child(10) { animation-delay: 0.55s; }
 .link-button:nth-child(11) { animation-delay: 0.6s; }
 
-/* Üzerine gelince parlayan ışık efekti */
-.link-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.28), transparent);
-    transition: left 0.5s ease;
-}
-
-.link-button:hover::before {
-    left: 100%;
-}
-
+/* Üzerine gelince neon ışık patlaması (Kendi renginde parlar) */
 .link-button:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+    box-shadow: 0 0 25px currentColor, 0 0 40px rgba(255, 255, 255, 0.3);
 }
 
 .link-button:active {
@@ -145,7 +133,7 @@ body {
     margin-top: 40px;
     text-align: center;
     font-size: 12px;
-    color: #888;
+    color: #666;
     opacity: 0;
     animation: fadeInUp 0.6s ease-out 0.65s forwards;
 }
