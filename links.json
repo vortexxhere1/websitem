@@ -1,0 +1,75 @@
+{
+    "profile": {
+        "name": "VortexxHere",
+        "bio": "linklerim",
+        "avatar": "avatar.jpg"
+    },
+    "links": [
+        {
+            "title": "GitHub",
+            "url": "https://github.com/vortexxhere1",
+            "icon": "fa-brands fa-github",
+            "bgColor": "#24292e"
+        },
+        {
+            "title": "YouTube",
+            "url": "https://www.youtube.com/@vortexhere1.2",
+            "icon": "fa-brands fa-youtube",
+            "bgColor": "#FF0000"
+        },
+        {
+            "title": "tursucuk1",
+            "url": "#",
+            "icon": "fa-brands fa-discord",
+            "bgColor": "#5865F2"
+        },
+        {
+            "title": "Discord Sunucum",
+            "url": "https://discord.gg/BanQpRaQP4",
+            "icon": "fa-solid fa-users",
+            "bgColor": "#5865F2"
+        },
+        {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/ceysh_1/",
+            "icon": "fa-brands fa-instagram",
+            "bgColor": "#E1306C"
+        },
+        {
+            "title": "TikTok",
+            "url": "https://www.tiktok.com/@vortexxhere",
+            "icon": "fa-brands fa-tiktok",
+            "bgColor": "#010101"
+        },
+        {
+            "title": "vortexxhere1#0001",
+            "url": "#",
+            "icon": "fa-solid fa-gamepad",
+            "bgColor": "#EB0029"
+        },
+        {
+            "title": "Steam",
+            "url": "https://steamcommunity.com/profiles/76561199494568561/",
+            "icon": "fa-brands fa-steam",
+            "bgColor": "#1b2838"
+        },
+        {
+            "title": "Epic Games: CanXxX31",
+            "url": "#",
+            "icon": "fa-solid fa-store",
+            "bgColor": "#2a2a2a"
+        },
+        {
+            "title": "Roblox",
+            "url": "https://www.roblox.com/tr/users/8762205069/profile",
+            "icon": "fa-solid fa-cube",
+            "bgColor": "#111111"
+        },
+       { 
+            "title": "Minecraft: vortexhere1",
+            "url": "#",
+            "icon": "fa-solid fa-cubes",
+            "bgColor": "#385d3b"
+        }
+    ]
+}
