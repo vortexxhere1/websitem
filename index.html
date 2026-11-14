@@ -4,31 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VortexxHere - Linklerim</title>
-    <!-- FontAwesome İkonları için -->
+    <!-- FontAwesome İkonları -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Stil Dosyası -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Kar Efekti İçin Konteyner -->
+    <div id="snow-container"></div>
+
+    <!-- Müzik Çalar (Doğrudan HTML İçinde) -->
+    <button id="music-toggle" class="music-btn" title="Lofi Müziği Aç/Kapat">
+        <i class="fas fa-music"></i>
+    </button>
+    <audio id="bg-music" loop preload="auto">
+        <source src="https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg" type="audio/ogg">
+        <source src="https://ia801504.us.archive.org/3/items/lofi-study-beat/Lofi%20Study%20Beat.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Panoya Kopyalandı Bildirimi (Toast) -->
+    <div id="toast" class="toast">Panoya kopyalandı! ✨</div>
+
     <div class="container">
-        <!-- Profil Fotoğrafı ve Bilgileri -->
-        <div class="profile-container">
-            <a href="https://discord.com" target="_blank" title="Profili Ziyaret Et">
-                <img src="avatar.jpg" alt="Profil Resmi" class="avatar">
-            </a>
+        <!-- Tıklanabilir Profil Alanı -->
+        <div id="profile-trigger" class="profile-container" title="Linkleri görmek için tıkla">
+            <img src="avatar.jpg" alt="Profil Resmi" class="avatar">
             <h1 id="profile-name">Yükleniyor...</h1>
             <p id="profile-bio">Yükleniyor...</p>
+            <span id="click-hint" class="click-hint">Linkleri görmek için dokun <i class="fas fa-hand-pointer"></i></span>
         </div>
 
-        <!-- Dinamik Linklerin Geleceği Alan -->
-        <div id="links-container" class="links-container">
+        <!-- Başlangıçta Gizli Olan Dinamik Linkler -->
+        <div id="links-container" class="links-container hidden">
             <!-- JavaScript burayı otomatik dolduracak -->
         </div>
 
-        <!-- Alt Bilgi -->
-        <footer class="footer">
-            <p>&copy; 2026 - Tüm Hakları Saklıdır.</p>
+        <!-- Alt Bilgi ve Ziyaretçi Sayacı -->
+        <footer id="footer" class="footer hidden">
+            <p>&copy; 2026 VortexxHere. Tüm Hakları Saklıdır.</p>
+            <div class="visitor-counter">
+                <i class="fas fa-eye"></i> Ziyaretçi: <span id="view-count">1,482</span>
+            </div>
         </footer>
     </div>
 
